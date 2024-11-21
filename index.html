@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Донаты для SAMP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://t.me/tesashare" target="_blank" class="author">by TESA Share</a>
+        </header>
+        <main>
+            <h1 class="gta-title">TESA Share</h1>
+            <form id="donateForm" action="process.php" method="POST">
+                <div class="input-group">
+                    <input type="text" name="nickname" id="nickname" required>
+                    <label for="nickname">Введите свой ник</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" name="amount" id="amount" required>
+                    <label for="amount">Введите сумму доната</label>
+                </div>
+                <button type="submit" class="donate-button">
+                    <span>Оплатить</span>
+                    <div class="liquid"></div>
+                </button>
+            </form>
+        </main>
+    </div>
+    <div id="particles"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
